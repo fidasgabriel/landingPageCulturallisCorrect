@@ -23,8 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=9999 start 2>&1 | tee build.log",
-    "build": "react-scripts --max_old_space_size=9999 build",
+    "start": "react-scripts --max_old_space_size=999999999 start 2>&1 | tee build.log",
+    "build": "react-scripts --max_old_space_size=999999999 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
